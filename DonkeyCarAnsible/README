@@ -1,0 +1,19 @@
+README:
+
+This is a simple proof of concept
+
+TODO: deploy donkeycars with ansible.
+
+
+usage:
+
+checkout this repository
+edit hosts for your needs
+prepare your donkey for ssh remote access
+- install sshd
+- exchange ssh keys with your donkey
+- prepare /etc/sudoers.d/username, who has root access
+
+exec shell script deployDonkeyCar.sh
+
+enjoy it :-)
