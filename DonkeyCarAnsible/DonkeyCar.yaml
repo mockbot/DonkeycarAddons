@@ -1,0 +1,12 @@
+---
+- hosts: DonkeyFarm
+  become: yes  
+  roles:
+    - hostname
+    - aptupdate
+    - installpackages
+    - donkeycar
+    - gym-donkeycar
+    - hotspot
+    - apache2
+    - cleanup

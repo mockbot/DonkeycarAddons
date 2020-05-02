@@ -1,0 +1,17 @@
+- name: create DonkeyCar base directories
+  file:
+    path: /opt/DonkeyCarGarage/DonkeyCar/GitRepository
+    state: directory
+    recurse: yes
+    mode: 0755
+
+- name: Clone/Update DonkeyCar from GITHUB
+  git:
+    repo: "https://github.com/autorope/donkeycar.git"
+    dest: "/opt/DonkeyCarGarage/DonkeyCar/GitRepository/donkeycar"
+    force: yes
+
+- name: PIP install DonkeyCar from Repository
+  pip:
+    name: git+http://github.com/tawnkramer/gym-donkeycar
+

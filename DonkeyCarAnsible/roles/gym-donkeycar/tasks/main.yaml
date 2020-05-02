@@ -1,0 +1,5 @@
+- name: PIP install Gym-DonkeyCar from Repository
+  pip:
+    name: git+http://github.com/tawnkramer/gym-donkeycar
+
+

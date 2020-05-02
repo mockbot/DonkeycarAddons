@@ -1,0 +1,4 @@
+<?php
+$f = fopen("/tmp/WiFiHotspot.enable", "w");
+fclose($f);
+

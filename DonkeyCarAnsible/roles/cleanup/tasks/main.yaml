@@ -1,0 +1,5 @@
+- name: cleanup DonkeyCar install directories
+  file:
+    path: /opt/DonkeyCarGarage
+    state: absent
+

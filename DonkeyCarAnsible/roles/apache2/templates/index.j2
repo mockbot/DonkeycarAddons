@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>{{ inventory_hostname }} Control</title>
+<style>
+body {
+	background-color: silver;
+}
+
+a:link, a:visited {
+    background-color: silver;
+    color: black;
+    padding: 1%  1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h1><p>{{ inventory_hostname }}</p></h1>
+
+<table>
+
+<tr>
+<td><a href="https://docs.donkeycar.com/" target="_blank"><b>Documentation</b></a></td>
+<td><a href="https://github.com/autorope/donkeycar" target="_blank"><b>Github</b></a></td>
+<td><a href="https://donkey.discourse.group/" target="_blank"><b>Discourse</b></a></td>
+</tr>
+
+<tr>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":8887 target=_blank>DonkeyControl</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/DonkeyControl?Start>Start</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/DonkeyControl?Stop>Stop</a></td>");</script>
+</tr>
+
+<tr>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/WiFiHotspot>WiFiHotspot</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/WiFiHotspot?Enable>Enable</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/WiFiHotspot?Disable>Disable</a></td>");</script>
+</tr>
+
+<tr>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/System>System</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/System?Reboot>Reboot</a></td>");</script>
+<script type="text/javascript">var ip=location.host;document.write("<td><a href=http://" + ip + ":80/System?Halt>Halt</a></td>");</script>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>
+
+

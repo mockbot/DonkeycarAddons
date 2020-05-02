@@ -1,0 +1,31 @@
+- name: Install DonkeyCar required additional packages
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+    - python3
+    - python3-dev
+    - python3-opencv
+    - git
+    - libhdf5-serial-dev
+    - hdf5-tools
+    - libatlas-base-dev
+    - build-essential
+    - net-tools
+    - vim
+
+- name: PIP install pip numpy setuptools
+  pip:
+    name:
+      - pip>19.0
+      - pandas
+      - h5py
+      - numpy>1.17.3, <1.18.0
+      - setuptools
+
+- name: PIP install TF
+  pip:
+    name: tensorflow==1.14
+
+

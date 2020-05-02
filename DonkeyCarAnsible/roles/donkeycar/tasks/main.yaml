@@ -1,0 +1,4 @@
+- name: PIP install DonkeyCar from Repository
+  pip:
+    name: git+http://github.com/autorope/donkeycar
+

@@ -1,0 +1,4 @@
+<?php
+$f = fopen("/tmp/DonkeyControl.start", "w");
+fclose($f);
+

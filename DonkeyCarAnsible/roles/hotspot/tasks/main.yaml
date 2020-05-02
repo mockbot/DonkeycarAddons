@@ -1,0 +1,9 @@
+- name: Install packages
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+    - hostapd
+    - dnsmasq
+

@@ -1,0 +1,8 @@
+[DonkeyFarm]
+DonkeyBuster3 ansible_host=192.166.253.107 ansible_user=pi 
+DonkeyFocal ansible_host=192.166.253.117 ansible_user=ros 
+
+[DonkeyFarm:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+

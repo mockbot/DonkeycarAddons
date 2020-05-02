@@ -1,0 +1,4 @@
+- name: Clone/Update ICEcoder from GITHUB
+  git:
+    repo: "https://github.com/icecoder/ICEcoder.git"
+    dest: "/var/wwww/html/ICEcoder"
